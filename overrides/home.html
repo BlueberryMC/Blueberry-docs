@@ -1,0 +1,69 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+{{ super() }}
+<style>
+  [data-md-color-scheme="slate"] .gradient {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(232, 15%, 21%, 1)' /></svg>") no-repeat bottom,linear-gradient(to bottom,var(--md-primary-fg-color),#04753d 99%,var(--md-default-bg-color) 99%);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 35em;
+  }
+
+  .gradient {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,linear-gradient(to bottom,var(--md-primary-fg-color),#a63fd9 99%,var(--md-default-bg-color) 99%);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50em;
+    font-size: .8rem;
+    line-height: 1.6;
+  }
+
+  .md-button {
+    color: var(--md-primary-bg-color);
+    margin-right: .5rem;
+    margin-top: .5rem
+  }
+
+  .gradient .md-button {
+    border: .1rem solid;
+    border-radius: .1rem;
+    color: var(--md-primary-fg-color);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    padding: .625em 2em;
+    transition: color 125ms,background-color 125ms,border-color 125ms
+  }
+
+  .md-button:focus, .md-button:hover {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color)
+  }
+
+  .md-button--primary {
+    background-color: var(--md-primary-bg-color);
+    border-color: var(--md-primary-bg-color);
+    color: #894da8
+  }
+</style>
+
+<section class="gradient">
+  <div style="margin-left: auto; margin-right: auto; width: 68%;">
+    <div style="margin-top: 4.5rem; max-width: 40%; padding-bottom: 14vw;">
+      <h1 style="font-weight: 700; margin-bottom: 1rem; margin-top: 1rem;">Minecraft Modding API</h1>
+      <p>(Work In Progress)</p>
+      <a href="getting-started/" title="Getting started" class="md-button md-button--primary">Getting started</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block site_nav %}{% endblock %}

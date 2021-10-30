@@ -1,0 +1,45 @@
+site_name: Blueberry Docs
+repo_url: https://github.com/BlueberryMC/Blueberry
+repo_name: BlueberryMC/Blueberry
+theme:
+  name: material
+  logo: assets/blueberry.png
+  favicon: assets/blueberry.png
+  custom_dir: overrides
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: light blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - header.autohide
+    - navigation.indexes
+    - navigation.expand
+    - navigation.top
+    - navigation.sections
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - md_in_html
+  - tables
+  - meta
+  - footnotes # https://squidfunk.github.io/mkdocs-material/reference/footnotes/#adding-footnote-references
+  - abbr # https://squidfunk.github.io/mkdocs-material/reference/abbreviations/#adding-abbreviations
+  - toc:
+      permalink: true
+# extra:
+#   version:
+#     provider: mike
