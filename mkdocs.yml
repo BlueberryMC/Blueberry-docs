@@ -31,6 +31,8 @@ theme:
     - navigation.top
     - navigation.sections
 markdown_extensions:
+  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - pymdownx.details
   - pymdownx.highlight
   - pymdownx.superfences
   - md_in_html
