@@ -1,7 +1,7 @@
 # Installing Blueberry
 
 !!! info
-    To create a mod, see [Creating a mod](creating-a-mod)
+    To create a mod, see [Creating a mod](creating-a-mod/)
 
 1. [Download and install Java 17 or later](https://adoptium.net/)
 2. Visit [releases page](https://github.com/BlueberryMC/Blueberry/releases) and download the installer

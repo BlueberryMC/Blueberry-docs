@@ -42,6 +42,8 @@ markdown_extensions:
   - abbr # https://squidfunk.github.io/mkdocs-material/reference/abbreviations/#adding-abbreviations
   - toc:
       permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true 
 # extra:
 #   version:
 #     provider: mike
