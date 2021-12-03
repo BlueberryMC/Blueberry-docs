@@ -35,7 +35,7 @@ nav:
     - index.md
   - Getting started:
     - getting-started/index.md
-    #- getting-started/built-in-commands.md
+    - getting-started/built-in-commands.md
     - Creating a mod:
       - getting-started/creating-a-mod/index.md
       - getting-started/creating-a-mod/event-api.md
