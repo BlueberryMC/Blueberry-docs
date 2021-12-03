@@ -40,7 +40,6 @@ nav:
       - getting-started/creating-a-mod/index.md
       - getting-started/creating-a-mod/event-api.md
   - Reference:
-    - reference/index.md
     - reference/mod-yml-format.md
     - reference/source-mod.md
   - Changelogs:
