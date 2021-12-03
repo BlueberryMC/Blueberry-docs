@@ -30,6 +30,23 @@ theme:
     - navigation.expand
     - navigation.top
     - navigation.sections
+nav:
+  - BlueberryMC:
+    - index.md
+  - Getting started:
+    - getting-started/index.md
+    #- getting-started/built-in-commands.md
+    - Creating a mod:
+      - getting-started/creating-a-mod/index.md
+      - getting-started/creating-a-mod/event-api.md
+  - Reference:
+    - reference/index.md
+    - reference/mod-yml-format.md
+    - reference/source-mod.md
+  - Changelogs:
+    - changelogs/1.18-0.0.19.md
+    - changelogs/1.18-0.0.18.md
+    - changelogs/1.18-0.0.17.md
 markdown_extensions:
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
   - pymdownx.details
