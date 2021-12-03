@@ -1,8 +1,9 @@
 # Creating a mod
 
 ## Requirements
+- Basic Java knowledge (strongly recommended)
 - JDK 17 or later (you can download from [here](https://adoptium.net/))
-- IDE (highly recommended, but not required)
+- IDE (if you do not have one, IntelliJ IDEA is recommended)
 
 ## Quick start
 You can clone the [ExampleMod](https://github.com/BlueberryMC/ExampleMod) for the quick start of creating a mod.
