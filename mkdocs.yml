@@ -43,6 +43,7 @@ nav:
     - reference/mod-yml-format.md
     - reference/source-mod.md
   - Changelogs:
+    - changelogs/1.18-0.1.0.md
     - changelogs/1.18-0.0.19.md
     - changelogs/1.18-0.0.18.md
     - changelogs/1.18-0.0.17.md
