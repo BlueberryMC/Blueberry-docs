@@ -39,11 +39,13 @@ nav:
     - Creating a mod:
       - getting-started/creating-a-mod/index.md
       - getting-started/creating-a-mod/event-api.md
+      - getting-started/creating-a-mod/client-commands.md
   - Reference:
     - reference/mod-yml-format.md
     - reference/mixin.md
     - reference/source-mod.md
   - Changelogs:
+    - changelogs/1.18.1-0.2.1.md
     - changelogs/1.18.1-0.2.0.md
     - changelogs/1.18-0.1.0.md
     - changelogs/1.18-0.0.19.md

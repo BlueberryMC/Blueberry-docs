@@ -6,6 +6,11 @@
 - IDE (if you do not have one, IntelliJ IDEA is recommended)
 
 ## Quick start
+
+!!! note
+    If you'd like to use mixin, use [ExampleMixinMod](https://github.com/BlueberryMC/ExampleMixinMod) when cloning repository.
+    Also see [this page](../../reference/mixin) when creating a mod with mixin.
+
 You can clone the [ExampleMod](https://github.com/BlueberryMC/ExampleMod) for the quick start of creating a mod.
 Then, run this command to generate some required files.
 ```
