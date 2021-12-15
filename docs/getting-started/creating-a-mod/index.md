@@ -1,5 +1,8 @@
 # Creating a mod
 
+!!! info
+    Javadoc is available at [jd.blueberrymc.net](https://jd.blueberrymc.net).
+
 ## Requirements
 - Basic Java knowledge (strongly recommended)
 - JDK 17 or later (you can download from [here](https://adoptium.net/))
