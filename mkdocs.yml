@@ -40,6 +40,7 @@ nav:
       - getting-started/creating-a-mod/index.md
       - getting-started/creating-a-mod/event-api.md
       - getting-started/creating-a-mod/client-commands.md
+      - getting-started/creating-a-mod/registering-an-item.md
   - Reference:
     - reference/mod-yml-format.md
     - reference/mixin.md
