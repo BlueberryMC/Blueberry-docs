@@ -46,6 +46,7 @@ nav:
     - reference/mixin.md
     - reference/source-mod.md
   - Changelogs:
+    - changelogs/1.18.2-1.0.0.md
     - changelogs/1.18.1-0.2.2.md
     - changelogs/1.18.1-0.2.1.md
     - changelogs/1.18.1-0.2.0.md
