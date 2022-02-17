@@ -3,6 +3,10 @@
 !!! warning
     This feature is experimental, use at your own risk.
 
+    Known issues:
+
+    - Recompiling the mod breaks registered values (such as items, blocks, etc) because Blueberry cannot unregister the values which were previously registered.
+
 Source mod feature allows you to load mod without building .jar file manually.
 This feature can be enabled by adding some properties on your `mod.yml`.
 
