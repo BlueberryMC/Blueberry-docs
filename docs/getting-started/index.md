@@ -3,9 +3,6 @@
 !!! info
     To create a mod, see [Creating a mod](creating-a-mod/)
 
-!!! warning
-    Close existing Blueberry (client) before installing Blueberry!
-
 1. [Download and install Java 17 or later](https://adoptium.net/)
 2. Visit [releases page](https://github.com/BlueberryMC/Blueberry/releases) and download the installer
   ![image](https://user-images.githubusercontent.com/19150229/143880360-4725e9ba-ea88-4f04-88ae-f9f02bfcb62c.png)
