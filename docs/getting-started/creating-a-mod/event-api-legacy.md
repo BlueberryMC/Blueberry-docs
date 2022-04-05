@@ -1,4 +1,4 @@
-# Event API
+# Event API (Legacy)
 
 ## Using class (object) listener
 
@@ -53,7 +53,7 @@ Listeners using `EventPriority.LOWEST` are called first, then VERY_LOW, LOW, NOR
 When using an object listener, you can change the priority by providing a value to `@EventHandler`:
 ```java title="SomeListener.java"
 @EventHandler(priority = EventPriority.LOW) // register a listener with low priority
-public static void onReload(ModReloadEvent e) {
+public static void onReload(ModReloadEvent e) 
   // ...
 }
 ```
@@ -70,13 +70,22 @@ public void onPreInit() {
 
 ## Implementing your own event
 
-To create a event, you need to create a class which extends `Event`.
+To create a event, you need to:
+
+- create a class which extends `Event`
+- define static `getHandlerList()` which returns HandlerList as a result
 
 Simplest event implementation would be:
 ```java title="SomeEvent.java"
 import net.blueberrymc.common.bml.event.Event;
+import net.blueberrymc.common.bml.event.HandlerList;
 
 public class SomeEvent extends Event {
+    private static final HandlerList HANDLER_LIST = new HandlerList();
+
+    public static HandlerList getHandlerList() {
+        return HANDLER_LIST;
+    }
 }
 ```
 
@@ -108,10 +117,17 @@ If defined type (asynchronous or synchronous) does not match the runtime thread,
 To change the type, you can modify the constructor (in this example, the event is set to async):
 ```java title="AsyncXEvent.java"
 import net.blueberrymc.common.bml.event.Event;
+import net.blueberrymc.common.bml.event.HandlerList;
 
 public class AsyncXEvent extends Event {
+    private static final HandlerList HANDLER_LIST = new HandlerList();
+
     public AsyncXEvent() {
-      super(true); // async = true
+      super(true); // async: true
+    }
+
+    public static HandlerList getHandlerList() {
+        return HANDLER_LIST;
     }
 }
 ```
@@ -119,10 +135,17 @@ public class AsyncXEvent extends Event {
 Or, you can do this to determine type at runtime (may be useful for events which may be called from both synchronous and asynchronous):
 ```java title="MysteryEvent.java"
 import net.blueberrymc.common.bml.event.Event;
+import net.blueberrymc.common.bml.event.HandlerList;
 
 public class MysteryEvent extends Event {
+    private static final HandlerList HANDLER_LIST = new HandlerList();
+
     public MysteryEvent() {
       super(!Blueberry.getUtil().isOnGameThread());
+    }
+
+    public static HandlerList getHandlerList() {
+        return HANDLER_LIST;
     }
 }
 ```

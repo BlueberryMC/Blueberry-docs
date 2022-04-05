@@ -26,7 +26,12 @@ For `mod.yml` properties, see [mod.yml format](../../reference/mod-yml-format/)
 !!! info "Choose mod id wisely!"
     Other mods can depend on your mod id, so if your mod id was changed later, the depending mods will break.
 
-To test your mod, simply run:
+To test your mod on client, simply run:
 ```
 gradlew runClient
+```
+
+Or if you want to run server, run:
+```
+gradlew runServer
 ```

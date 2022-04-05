@@ -41,11 +41,14 @@ nav:
       - getting-started/creating-a-mod/event-api.md
       - getting-started/creating-a-mod/client-commands.md
       - getting-started/creating-a-mod/registering-an-item.md
+      - getting-started/creating-a-mod/event-api-legacy.md
   - Reference:
     - reference/mod-yml-format.md
     - reference/mixin.md
     - reference/source-mod.md
   - Changelogs:
+    - changelogs/1.18.2-1.2.0.md
+    - changelogs/1.18.2-1.1.0.md
     - changelogs/1.18.2-1.0.0.md
     - changelogs/1.18.1-0.2.2.md
     - changelogs/1.18.1-0.2.1.md
