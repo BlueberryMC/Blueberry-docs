@@ -17,10 +17,11 @@ This feature can be enabled by adding some properties on your `mod.yml`.
     - Source mod feature will not compile the code if `tools.jar` is unavailable.
 
 ## Usage
-1. Add these lines:
+1. Copy mod.yml to project root and add these lines to mod.yml in project root
   ```yaml title="mod.yml"
   source: true # tells mod loader to enable source mod feature for this mod
   sourceDir: <source root that contains .java files>
   include: <additional resource directory than source mod directory>
   ```
 2. Put your project directory to `mods` folder
+3. There should be at least two mod.yml files present in your project, at `/mod.yml` and `/src/main/resources/mod.yml` for example.
