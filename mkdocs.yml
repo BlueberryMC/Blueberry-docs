@@ -10,7 +10,7 @@ theme:
     repo: fontawesome/brands/github
   palette:
     - scheme: slate
-      primary: cyan
+      primary: light blue
       accent: pink
       toggle:
         icon: material/toggle-switch-off-outline
