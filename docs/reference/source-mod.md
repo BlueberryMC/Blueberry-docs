@@ -5,7 +5,8 @@
 
     Known issues:
 
-    - Recompiling the mod breaks registered values (such as items, blocks, etc) because Blueberry cannot unregister the values which were previously registered.
+    - Recompiling the mod breaks registered values (such as items, blocks, etc) because Blueberry cannot unregister the values which were previously registered. \([#16](https://github.com/BlueberryMC/Blueberry/issues/16))
+    - The live compiler directory is not being removed on exit \([#15](https://github.com/BlueberryMC/Blueberry/issues/15))
 
 Source mod feature allows you to load mod without building .jar file manually.
 This feature can be enabled by adding some properties on your `mod.yml`.
