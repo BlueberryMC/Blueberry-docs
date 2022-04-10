@@ -3,10 +3,15 @@
 !!! warning
     This feature is experimental, use at your own risk.
 
-    Known issues:
+    ## Known issues
 
     - Recompiling the mod breaks registered values (such as items, blocks, etc) because Blueberry cannot unregister the values which were previously registered. \([#16](https://github.com/BlueberryMC/Blueberry/issues/16))
     - The live compiler directory is not being removed on exit \([#15](https://github.com/BlueberryMC/Blueberry/issues/15))
+
+    ## Limitations
+
+    - Mixins are not applied
+    - javac can't find the external dependencies (in other words, there is no way to add classpath other than default ones)
 
 Source mod feature allows you to load mod without building .jar file manually.
 This feature can be enabled by adding some properties on your `mod.yml`.
