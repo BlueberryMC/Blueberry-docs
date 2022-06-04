@@ -10,7 +10,7 @@
 
     ## Limitations
 
-    - Mixins are not applied
+    - Mixins are not applied (Mixin class needs to be loaded before Minecraft)
     - javac can't find the external dependencies (in other words, there is no way to add classpath other than default ones)
 
 Source mod feature allows you to load mod without building .jar file manually.

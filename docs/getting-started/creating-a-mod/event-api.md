@@ -52,7 +52,7 @@ Listeners using `EventPriority.LOWEST` are called first, then VERY_LOW, LOW, NOR
 
 When using an object listener, you can change the priority by providing a value to `@EventHandler`:
 ```java title="SomeListener.java"
-@EventHandler(priority = EventPriority.LOW) // register a listener with low priority
+@EventHandler(priority = EventPriority.LOW) // register a listener with low priority (called earlier than NORMAL)
 public static void onReload(ModReloadEvent e) {
   // ...
 }
@@ -100,8 +100,8 @@ These thread are considered *asynchronous* (anything which does not meet the con
 - Netty Client IO
 - Netty Server IO
 - Netty Epoll IO
-- Worker-Main-n
-- Worker-Bootstrap-n
+- Worker-Main-*N*
+- Worker-Bootstrap-*N*
 
 If defined type (asynchronous or synchronous) does not match the runtime thread, the event manager will throw exception.
 
@@ -116,7 +116,7 @@ public class AsyncXEvent extends Event {
 }
 ```
 
-Or, you can do this to determine type at runtime (may be useful for events which may be called from both synchronous and asynchronous):
+Or, you can do this to determine type at runtime (maybe useful for events which may be called from both synchronous and asynchronous):
 ```java title="MysteryEvent.java"
 import net.blueberrymc.common.bml.event.Event;
 
@@ -126,3 +126,5 @@ public class MysteryEvent extends Event {
     }
 }
 ```
+
+Use that wisely though, because it might produce some hard-to-debug issues.
