@@ -4,10 +4,9 @@
 
 ```java title="SomeListener.java"
 import net.blueberrymc.common.bml.event.EventHandler;
-import net.blueberrymc.common.bml.event.Listener;
 import net.blueberrymc.common.event.mod.ModReloadEvent;
 
-public class SomeListener implements Listener {
+public class SomeListener {
   @EventHandler
   // the method can be static, or instance (non-static) method
   public static void onReload(ModReloadEvent e) {
